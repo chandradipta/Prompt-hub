@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "prompt-hub"
+version = "0.1.0"
+description = "Prompt-Hub: Prompt-as-Code platform to manage, test, and deploy LLM prompts."
+authors = ["chandradipta <>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1"
+PyYAML = "^6.0"
+requests = "^2.31"
+pytest = {version="^7.4", optional = true}
+streamlit = "^1.28"
+openai = "^1.0.0"
+rapidfuzz = "^2.15"
+
+[tool.poetry.dev-dependencies]
+# keep tests available
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
